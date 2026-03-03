@@ -1,0 +1,55 @@
+name: kannadalearn
+description: Kannada Baruthe - Learn Kannada
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_tts: ^3.8.5
+  audioplayers: ^5.2.1
+  shared_preferences: ^2.2.2
+  cupertino_icons: ^1.0.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - config/app_config.json
+    - data/lessons_index.json
+    - data/lessons/lesson_01.json
+    - assets/images/fruits/apple.png
+    - assets/images/fruits/banana.png
+    - assets/images/fruits/mango.png
+    - assets/images/fruits/grapes.png
+    - assets/images/fruits/orange.png
+    - assets/images/fruits/pineapple.png
+    - assets/images/fruits/watermelon.png
+    - assets/images/fruits/pomegranate.png
+    - assets/images/fruits/papaya.png
+    - assets/images/fruits/guava.png
+    - assets/audio/sebu.mp3
+    - assets/audio/balehannu.mp3
+    - assets/audio/mavu.mp3
+    - assets/audio/drakshi.mp3
+    - assets/audio/kittale.mp3
+    - assets/audio/ananasu.mp3
+    - assets/audio/kallangadi.mp3
+    - assets/audio/dalimbe.mp3
+    - assets/audio/pappayi.mp3
+    - assets/audio/sibekayi.mp3
+  
+  # fonts:
+  #   - family: NotoSansKannada
+  #     fonts:
+  #       - asset: assets/fonts/NotoSansKannada-Regular.ttf
+  #       - asset: assets/fonts/NotoSansKannada-Bold.ttf
+  #         weight: 700

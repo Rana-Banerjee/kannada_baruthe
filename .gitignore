@@ -1,0 +1,32 @@
+# Flutter/Dart specific
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+/build/
+
+# IDE specific
+.idea/
+.vscode/
+*.iml
+
+# Platform specific
+/ios/Pods/
+/ios/.symlinks/
+/android/.gradle/
+/macos/Pods/
+/windows/flutter/
+/linux/flutter/
+
+# Runtime data
+data/progress/checkpoint.json
+
+# Test artifacts
+/coverage/
+.test_results/
+
+# Misc
+.DS_Store
+*.log

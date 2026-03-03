@@ -1,0 +1,196 @@
+{
+  "lesson_id": "lesson_01",
+  "lesson_title": "Fruits",
+  "exercises": [
+    {
+      "exercise_id": "ex_001",
+      "exercise_type": "select_correct_image",
+      "word": {
+        "kannada_script": "ಸೇಬು",
+        "kannada_roman": "Sēbu",
+        "english": "Apple"
+      },
+      "audio": {
+        "file": "assets/audio/sebu.mp3",
+        "tts_text": "ಸೇಬು"
+      },
+      "tiles": [
+        {"tile_id": "t1", "english_label": "Apple", "image": "assets/images/fruits/apple.png", "is_correct": true},
+        {"tile_id": "t2", "english_label": "Banana", "image": "assets/images/fruits/banana.png", "is_correct": false},
+        {"tile_id": "t3", "english_label": "Mango", "image": "assets/images/fruits/mango.png", "is_correct": false},
+        {"tile_id": "t4", "english_label": "Grapes", "image": "assets/images/fruits/grapes.png", "is_correct": false}
+      ]
+    },
+    {
+      "exercise_id": "ex_002",
+      "exercise_type": "select_correct_image",
+      "word": {
+        "kannada_script": "ಬಾಳೆಹಣ್ಣು",
+        "kannada_roman": "Bāḷehaṇṇu",
+        "english": "Banana"
+      },
+      "audio": {
+        "file": "assets/audio/balehannu.mp3",
+        "tts_text": "ಬಾಳೆಹಣ್ಣು"
+      },
+      "tiles": [
+        {"tile_id": "t1", "english_label": "Mango", "image": "assets/images/fruits/mango.png", "is_correct": false},
+        {"tile_id": "t2", "english_label": "Banana", "image": "assets/images/fruits/banana.png", "is_correct": true},
+        {"tile_id": "t3", "english_label": "Orange", "image": "assets/images/fruits/orange.png", "is_correct": false},
+        {"tile_id": "t4", "english_label": "Apple", "image": "assets/images/fruits/apple.png", "is_correct": false}
+      ]
+    },
+    {
+      "exercise_id": "ex_003",
+      "exercise_type": "select_correct_image",
+      "word": {
+        "kannada_script": "ಮಾವು",
+        "kannada_roman": "Māvu",
+        "english": "Mango"
+      },
+      "audio": {
+        "file": "assets/audio/mavu.mp3",
+        "tts_text": "ಮಾವು"
+      },
+      "tiles": [
+        {"tile_id": "t1", "english_label": "Pineapple", "image": "assets/images/fruits/pineapple.png", "is_correct": false},
+        {"tile_id": "t2", "english_label": "Grapes", "image": "assets/images/fruits/grapes.png", "is_correct": false},
+        {"tile_id": "t3", "english_label": "Mango", "image": "assets/images/fruits/mango.png", "is_correct": true},
+        {"tile_id": "t4", "english_label": "Watermelon", "image": "assets/images/fruits/watermelon.png", "is_correct": false}
+      ]
+    },
+    {
+      "exercise_id": "ex_004",
+      "exercise_type": "select_correct_image",
+      "word": {
+        "kannada_script": "ದ್ರಾಕ್ಷಿ",
+        "kannada_roman": "Drākṣi",
+        "english": "Grapes"
+      },
+      "audio": {
+        "file": "assets/audio/drakshi.mp3",
+        "tts_text": "ದ್ರಾಕ್ಷಿ"
+      },
+      "tiles": [
+        {"tile_id": "t1", "english_label": "Papaya", "image": "assets/images/fruits/papaya.png", "is_correct": false},
+        {"tile_id": "t2", "english_label": "Guava", "image": "assets/images/fruits/guava.png", "is_correct": false},
+        {"tile_id": "t3", "english_label": "Grapes", "image": "assets/images/fruits/grapes.png", "is_correct": true},
+        {"tile_id": "t4", "english_label": "Pomegranate", "image": "assets/images/fruits/pomegranate.png", "is_correct": false}
+      ]
+    },
+    {
+      "exercise_id": "ex_005",
+      "exercise_type": "select_correct_image",
+      "word": {
+        "kannada_script": "ಕಿತ್ತಳೆ",
+        "kannada_roman": "Kittaḷe",
+        "english": "Orange"
+      },
+      "audio": {
+        "file": "assets/audio/kittale.mp3",
+        "tts_text": "ಕಿತ್ತಳೆ"
+      },
+      "tiles": [
+        {"tile_id": "t1", "english_label": "Apple", "image": "assets/images/fruits/apple.png", "is_correct": false},
+        {"tile_id": "t2", "english_label": "Banana", "image": "assets/images/fruits/banana.png", "is_correct": false},
+        {"tile_id": "t3", "english_label": "Orange", "image": "assets/images/fruits/orange.png", "is_correct": true},
+        {"tile_id": "t4", "english_label": "Mango", "image": "assets/images/fruits/mango.png", "is_correct": false}
+      ]
+    },
+    {
+      "exercise_id": "ex_006",
+      "exercise_type": "select_correct_image",
+      "word": {
+        "kannada_script": "ಅನನಾಸು",
+        "kannada_roman": "Ananāsu",
+        "english": "Pineapple"
+      },
+      "audio": {
+        "file": "assets/audio/ananasu.mp3",
+        "tts_text": "ಅನನಾಸು"
+      },
+      "tiles": [
+        {"tile_id": "t1", "english_label": "Pineapple", "image": "assets/images/fruits/pineapple.png", "is_correct": true},
+        {"tile_id": "t2", "english_label": "Watermelon", "image": "assets/images/fruits/watermelon.png", "is_correct": false},
+        {"tile_id": "t3", "english_label": "Grapes", "image": "assets/images/fruits/grapes.png", "is_correct": false},
+        {"tile_id": "t4", "english_label": "Papaya", "image": "assets/images/fruits/papaya.png", "is_correct": false}
+      ]
+    },
+    {
+      "exercise_id": "ex_007",
+      "exercise_type": "select_correct_image",
+      "word": {
+        "kannada_script": "ಕಲ್ಲಂಗಡಿ",
+        "kannada_roman": "Kallaṅgaḍi",
+        "english": "Watermelon"
+      },
+      "audio": {
+        "file": "assets/audio/kallangadi.mp3",
+        "tts_text": "ಕಲ್ಲಂಗಡಿ"
+      },
+      "tiles": [
+        {"tile_id": "t1", "english_label": "Orange", "image": "assets/images/fruits/orange.png", "is_correct": false},
+        {"tile_id": "t2", "english_label": "Watermelon", "image": "assets/images/fruits/watermelon.png", "is_correct": true},
+        {"tile_id": "t3", "english_label": "Guava", "image": "assets/images/fruits/guava.png", "is_correct": false},
+        {"tile_id": "t4", "english_label": "Pineapple", "image": "assets/images/fruits/pineapple.png", "is_correct": false}
+      ]
+    },
+    {
+      "exercise_id": "ex_008",
+      "exercise_type": "select_correct_image",
+      "word": {
+        "kannada_script": "ದಾಳಿಂಬೆ",
+        "kannada_roman": "Dāḷimbe",
+        "english": "Pomegranate"
+      },
+      "audio": {
+        "file": "assets/audio/dalimbe.mp3",
+        "tts_text": "ದಾಳಿಂಬೆ"
+      },
+      "tiles": [
+        {"tile_id": "t1", "english_label": "Pomegranate", "image": "assets/images/fruits/pomegranate.png", "is_correct": true},
+        {"tile_id": "t2", "english_label": "Banana", "image": "assets/images/fruits/banana.png", "is_correct": false},
+        {"tile_id": "t3", "english_label": "Mango", "image": "assets/images/fruits/mango.png", "is_correct": false},
+        {"tile_id": "t4", "english_label": "Apple", "image": "assets/images/fruits/apple.png", "is_correct": false}
+      ]
+    },
+    {
+      "exercise_id": "ex_009",
+      "exercise_type": "select_correct_image",
+      "word": {
+        "kannada_script": "ಪಪ್ಪಾಯಿ",
+        "kannada_roman": "Pappāyi",
+        "english": "Papaya"
+      },
+      "audio": {
+        "file": "assets/audio/pappayi.mp3",
+        "tts_text": "ಪಪ್ಪಾಯಿ"
+      },
+      "tiles": [
+        {"tile_id": "t1", "english_label": "Grapes", "image": "assets/images/fruits/grapes.png", "is_correct": false},
+        {"tile_id": "t2", "english_label": "Papaya", "image": "assets/images/fruits/papaya.png", "is_correct": true},
+        {"tile_id": "t3", "english_label": "Watermelon", "image": "assets/images/fruits/watermelon.png", "is_correct": false},
+        {"tile_id": "t4", "english_label": "Orange", "image": "assets/images/fruits/orange.png", "is_correct": false}
+      ]
+    },
+    {
+      "exercise_id": "ex_010",
+      "exercise_type": "select_correct_image",
+      "word": {
+        "kannada_script": "ಸೀಬೆಕಾಯಿ",
+        "kannada_roman": "Sībekāyi",
+        "english": "Guava"
+      },
+      "audio": {
+        "file": "assets/audio/sibekayi.mp3",
+        "tts_text": "ಸೀಬೆಕಾಯಿ"
+      },
+      "tiles": [
+        {"tile_id": "t1", "english_label": "Pomegranate", "image": "assets/images/fruits/pomegranate.png", "is_correct": false},
+        {"tile_id": "t2", "english_label": "Guava", "image": "assets/images/fruits/guava.png", "is_correct": true},
+        {"tile_id": "t3", "english_label": "Pineapple", "image": "assets/images/fruits/pineapple.png", "is_correct": false},
+        {"tile_id": "t4", "english_label": "Banana", "image": "assets/images/fruits/banana.png", "is_correct": false}
+      ]
+    }
+  ]
+}

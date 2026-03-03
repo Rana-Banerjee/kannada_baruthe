@@ -1,0 +1,10 @@
+{
+  "lessons": [
+    {
+      "lesson_id": "lesson_01",
+      "title": "Fruits",
+      "file": "data/lessons/lesson_01.json",
+      "enabled": true
+    }
+  ]
+}
