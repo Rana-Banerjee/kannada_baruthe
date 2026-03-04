@@ -43,15 +43,26 @@ class _LessonScreenState extends State<LessonScreen> {
 
   Future<void> _loadLesson() async {
     try {
-      final checkpoint =
-          ModalRoute.of(context)?.settings.arguments as Checkpoint?;
+      final args = ModalRoute.of(context)?.settings.arguments;
 
-      // Load the lesson
-      final lesson = await LessonService.loadFirstLesson();
+      Lesson lesson;
+      int startIndex = 0;
+      int startScore = 0;
 
-      // Resume from checkpoint if provided
-      final startIndex = checkpoint?.exerciseIndex ?? 0;
-      final startScore = checkpoint?.score ?? 0;
+      if (args is String) {
+        // Direct lesson ID from lesson selection or resume
+        lesson = await LessonService.loadLesson(args);
+
+        // Check if there's a checkpoint for this lesson
+        final checkpoint = await ProgressService().loadCheckpoint();
+        if (checkpoint != null && checkpoint.lessonId == args) {
+          startIndex = checkpoint.exerciseIndex;
+          startScore = checkpoint.score;
+        }
+      } else {
+        // Fallback to first lesson (legacy behavior)
+        lesson = await LessonService.loadFirstLesson();
+      }
 
       setState(() {
         _lesson = lesson;
@@ -59,24 +70,12 @@ class _LessonScreenState extends State<LessonScreen> {
         _score = startScore;
         _isLoading = false;
       });
-
-      // Auto-play audio if configured
-      final config = AppConfig.instance;
-      if (config.autoPlayAudio && !_showFeedback) {
-        _playCurrentAudio();
-      }
     } catch (e) {
       setState(() {
         _errorMessage = 'Failed to load lesson: $e';
         _isLoading = false;
       });
     }
-  }
-
-  void _playCurrentAudio() {
-    if (_lesson == null) return;
-    final exercise = _lesson!.exercises[_currentExerciseIndex];
-    AudioService.play(exercise.audio.file, exercise.audio.ttsText);
   }
 
   void _onTileTap(int tileIndex) {
@@ -121,12 +120,6 @@ class _LessonScreenState extends State<LessonScreen> {
         _selectedTileIndex = null;
         _showFeedback = false;
       });
-
-      // Auto-play audio for next exercise
-      final config = AppConfig.instance;
-      if (config.autoPlayAudio) {
-        _playCurrentAudio();
-      }
     } else {
       // Lesson complete
       _completeLesson();

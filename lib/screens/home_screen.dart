@@ -29,7 +29,7 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   void _startLesson() {
-    Navigator.pushNamed(context, '/lesson');
+    Navigator.pushNamed(context, '/select');
   }
 
   void _resumeLesson() {
@@ -37,7 +37,7 @@ class _HomeScreenState extends State<HomeScreen> {
       Navigator.pushNamed(
         context,
         '/lesson',
-        arguments: _checkpoint,
+        arguments: _checkpoint!.lessonId,
       );
     }
   }
@@ -53,7 +53,7 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     final config = AppConfig.instance;
-    
+
     return Scaffold(
       backgroundColor: _parseColor(config.backgroundColor),
       body: SafeArea(
@@ -86,7 +86,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     textAlign: TextAlign.center,
                   ),
                   const SizedBox(height: 60),
-                  
+
                   if (_isLoading)
                     const CircularProgressIndicator()
                   else if (_checkpoint != null)
@@ -166,7 +166,8 @@ class _HomeScreenState extends State<HomeScreen> {
               style: ElevatedButton.styleFrom(
                 backgroundColor: _parseColor(config.primaryColor),
                 foregroundColor: Colors.white,
-                padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 14),
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 32, vertical: 14),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(12),
                 ),
@@ -182,8 +183,10 @@ class _HomeScreenState extends State<HomeScreen> {
               onPressed: _restartLesson,
               style: OutlinedButton.styleFrom(
                 foregroundColor: _parseColor(config.wrongColor),
-                side: BorderSide(color: _parseColor(config.wrongColor), width: 2),
-                padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 14),
+                side:
+                    BorderSide(color: _parseColor(config.wrongColor), width: 2),
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 32, vertical: 14),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(12),
                 ),

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'config/app_config.dart';
 import 'screens/home_screen.dart';
+import 'screens/lesson_select_screen.dart';
 import 'screens/lesson_screen.dart';
 import 'screens/complete_screen.dart';
 
@@ -10,7 +11,7 @@ class KannadaLearnApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final config = AppConfig.instance;
-    
+
     return MaterialApp(
       title: config.appName,
       debugShowCheckedModeBanner: false,
@@ -23,6 +24,7 @@ class KannadaLearnApp extends StatelessWidget {
       initialRoute: '/',
       routes: {
         '/': (context) => const HomeScreen(),
+        '/select': (context) => const LessonSelectScreen(),
         '/lesson': (context) => const LessonScreen(),
         '/complete': (context) => const CompleteScreen(),
       },

@@ -5,6 +5,12 @@
       "title": "Fruits",
       "file": "data/lessons/lesson_01.json",
       "enabled": true
+    },
+    {
+      "lesson_id": "lesson_02",
+      "title": "Numbers",
+      "file": "data/lessons/lesson_02.json",
+      "enabled": true
     }
   ]
 }

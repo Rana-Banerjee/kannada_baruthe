@@ -26,6 +26,7 @@ flutter:
     - config/app_config.json
     - data/lessons_index.json
     - data/lessons/lesson_01.json
+    - data/lessons/lesson_02.json
     - assets/images/fruits/apple.png
     - assets/images/fruits/banana.png
     - assets/images/fruits/mango.png
@@ -36,6 +37,7 @@ flutter:
     - assets/images/fruits/pomegranate.png
     - assets/images/fruits/papaya.png
     - assets/images/fruits/guava.png
+    - assets/images/numbers/
     - assets/audio/sebu.mp3
     - assets/audio/balehannu.mp3
     - assets/audio/mavu.mp3
@@ -46,6 +48,16 @@ flutter:
     - assets/audio/dalimbe.mp3
     - assets/audio/pappayi.mp3
     - assets/audio/sibekayi.mp3
+    - assets/audio/ondu.mp3
+    - assets/audio/eradu.mp3
+    - assets/audio/muru.mp3
+    - assets/audio/nalku.mp3
+    - assets/audio/aidu.mp3
+    - assets/audio/aru.mp3
+    - assets/audio/elu.mp3
+    - assets/audio/entu.mp3
+    - assets/audio/ombattu.mp3
+    - assets/audio/hattu.mp3
   
   # fonts:
   #   - family: NotoSansKannada

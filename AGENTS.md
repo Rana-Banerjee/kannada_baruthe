@@ -17,10 +17,10 @@
 
 ## Sub-Agents
 
-| Agent             | File                               | Needs Dart context? |
-| ----------------- | ---------------------------------- | ------------------- |
-| Data Generator    | `.opencode/data-generator.md`    | ❌                  |
-| Playwright Tester | `.opencode/playwright-tester.md` | ❌                  |
+| Agent             | File                                   | Needs Dart context? |
+| ----------------- | -------------------------------------- | ------------------- |
+| Data Generator    | `.opencode/agents/DATA_GENERATOR.md` | ❌                  |
+| Playwright Tester | `.opencode/agents/TESTER.md`         | ❌                  |
 
 ---
 
@@ -30,8 +30,8 @@
 STATUS.md                           ← READ FIRST / WRITE LAST every session
 PRD.md                              ← features, ACs, data schemas, config schema
 AGENTS.md                           ← this file: structure, rules, recipes
-.opencode/data-generator.md         ← sub-agent: content generation
-.opencode/playwright-tester.md      ← sub-agent: E2E tests
+.opencode/agents/DATA-GENERATOR.md         ← sub-agent: content generation
+.opencode/agents/TESTER.md      ← sub-agent: E2E tests
 
 config/app_config.json              ← theme, fonts, TTS, exercise rules
 data/lessons_index.json             ← lesson list (id, path, enabled)

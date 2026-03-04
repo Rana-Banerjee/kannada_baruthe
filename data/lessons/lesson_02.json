@@ -1,0 +1,196 @@
+{
+  "lesson_id": "lesson_02",
+  "lesson_title": "Numbers",
+  "exercises": [
+    {
+      "exercise_id": "ex_001",
+      "exercise_type": "select_correct_image",
+      "word": {
+        "kannada_script": "ಒಂದು",
+        "kannada_roman": "ondu",
+        "english": "One"
+      },
+      "audio": {
+        "file": "assets/audio/ondu.mp3",
+        "tts_text": "ಒಂದು"
+      },
+      "tiles": [
+        {"tile_id": "t1", "english_label": "One", "image": "assets/images/numbers/one.png", "is_correct": true},
+        {"tile_id": "t2", "english_label": "Two", "image": "assets/images/numbers/two.png", "is_correct": false},
+        {"tile_id": "t3", "english_label": "Three", "image": "assets/images/numbers/three.png", "is_correct": false},
+        {"tile_id": "t4", "english_label": "Four", "image": "assets/images/numbers/four.png", "is_correct": false}
+      ]
+    },
+    {
+      "exercise_id": "ex_002",
+      "exercise_type": "select_correct_image",
+      "word": {
+        "kannada_script": "ಎರಡು",
+        "kannada_roman": "eradu",
+        "english": "Two"
+      },
+      "audio": {
+        "file": "assets/audio/eradu.mp3",
+        "tts_text": "ಎರಡು"
+      },
+      "tiles": [
+        {"tile_id": "t1", "english_label": "Five", "image": "assets/images/numbers/five.png", "is_correct": false},
+        {"tile_id": "t2", "english_label": "Two", "image": "assets/images/numbers/two.png", "is_correct": true},
+        {"tile_id": "t3", "english_label": "Six", "image": "assets/images/numbers/six.png", "is_correct": false},
+        {"tile_id": "t4", "english_label": "One", "image": "assets/images/numbers/one.png", "is_correct": false}
+      ]
+    },
+    {
+      "exercise_id": "ex_003",
+      "exercise_type": "select_correct_image",
+      "word": {
+        "kannada_script": "ಮೂರು",
+        "kannada_roman": "mūru",
+        "english": "Three"
+      },
+      "audio": {
+        "file": "assets/audio/muru.mp3",
+        "tts_text": "ಮೂರು"
+      },
+      "tiles": [
+        {"tile_id": "t1", "english_label": "Seven", "image": "assets/images/numbers/seven.png", "is_correct": false},
+        {"tile_id": "t2", "english_label": "Three", "image": "assets/images/numbers/three.png", "is_correct": true},
+        {"tile_id": "t3", "english_label": "Eight", "image": "assets/images/numbers/eight.png", "is_correct": false},
+        {"tile_id": "t4", "english_label": "Nine", "image": "assets/images/numbers/nine.png", "is_correct": false}
+      ]
+    },
+    {
+      "exercise_id": "ex_004",
+      "exercise_type": "select_correct_image",
+      "word": {
+        "kannada_script": "ನಾಲ್ಕು",
+        "kannada_roman": "nālku",
+        "english": "Four"
+      },
+      "audio": {
+        "file": "assets/audio/nalku.mp3",
+        "tts_text": "ನಾಲ್ಕು"
+      },
+      "tiles": [
+        {"tile_id": "t1", "english_label": "Four", "image": "assets/images/numbers/four.png", "is_correct": true},
+        {"tile_id": "t2", "english_label": "Ten", "image": "assets/images/numbers/ten.png", "is_correct": false},
+        {"tile_id": "t3", "english_label": "Two", "image": "assets/images/numbers/two.png", "is_correct": false},
+        {"tile_id": "t4", "english_label": "Six", "image": "assets/images/numbers/six.png", "is_correct": false}
+      ]
+    },
+    {
+      "exercise_id": "ex_005",
+      "exercise_type": "select_correct_image",
+      "word": {
+        "kannada_script": "ಐದು",
+        "kannada_roman": "aidu",
+        "english": "Five"
+      },
+      "audio": {
+        "file": "assets/audio/aidu.mp3",
+        "tts_text": "ಐದು"
+      },
+      "tiles": [
+        {"tile_id": "t1", "english_label": "Three", "image": "assets/images/numbers/three.png", "is_correct": false},
+        {"tile_id": "t2", "english_label": "One", "image": "assets/images/numbers/one.png", "is_correct": false},
+        {"tile_id": "t3", "english_label": "Five", "image": "assets/images/numbers/five.png", "is_correct": true},
+        {"tile_id": "t4", "english_label": "Seven", "image": "assets/images/numbers/seven.png", "is_correct": false}
+      ]
+    },
+    {
+      "exercise_id": "ex_006",
+      "exercise_type": "select_correct_image",
+      "word": {
+        "kannada_script": "ಆರು",
+        "kannada_roman": "āru",
+        "english": "Six"
+      },
+      "audio": {
+        "file": "assets/audio/aru.mp3",
+        "tts_text": "ಆರು"
+      },
+      "tiles": [
+        {"tile_id": "t1", "english_label": "Eight", "image": "assets/images/numbers/eight.png", "is_correct": false},
+        {"tile_id": "t2", "english_label": "Four", "image": "assets/images/numbers/four.png", "is_correct": false},
+        {"tile_id": "t3", "english_label": "Nine", "image": "assets/images/numbers/nine.png", "is_correct": false},
+        {"tile_id": "t4", "english_label": "Six", "image": "assets/images/numbers/six.png", "is_correct": true}
+      ]
+    },
+    {
+      "exercise_id": "ex_007",
+      "exercise_type": "select_correct_image",
+      "word": {
+        "kannada_script": "ಏಳು",
+        "kannada_roman": "eḷu",
+        "english": "Seven"
+      },
+      "audio": {
+        "file": "assets/audio/elu.mp3",
+        "tts_text": "ಏಳು"
+      },
+      "tiles": [
+        {"tile_id": "t1", "english_label": "Seven", "image": "assets/images/numbers/seven.png", "is_correct": true},
+        {"tile_id": "t2", "english_label": "Five", "image": "assets/images/numbers/five.png", "is_correct": false},
+        {"tile_id": "t3", "english_label": "Ten", "image": "assets/images/numbers/ten.png", "is_correct": false},
+        {"tile_id": "t4", "english_label": "Three", "image": "assets/images/numbers/three.png", "is_correct": false}
+      ]
+    },
+    {
+      "exercise_id": "ex_008",
+      "exercise_type": "select_correct_image",
+      "word": {
+        "kannada_script": "ಎಂಟು",
+        "kannada_roman": "eṇṭu",
+        "english": "Eight"
+      },
+      "audio": {
+        "file": "assets/audio/entu.mp3",
+        "tts_text": "ಎಂಟು"
+      },
+      "tiles": [
+        {"tile_id": "t1", "english_label": "Six", "image": "assets/images/numbers/six.png", "is_correct": false},
+        {"tile_id": "t2", "english_label": "Eight", "image": "assets/images/numbers/eight.png", "is_correct": true},
+        {"tile_id": "t3", "english_label": "One", "image": "assets/images/numbers/one.png", "is_correct": false},
+        {"tile_id": "t4", "english_label": "Two", "image": "assets/images/numbers/two.png", "is_correct": false}
+      ]
+    },
+    {
+      "exercise_id": "ex_009",
+      "exercise_type": "select_correct_image",
+      "word": {
+        "kannada_script": "ಒಂಬತ್ತು",
+        "kannada_roman": "ombattu",
+        "english": "Nine"
+      },
+      "audio": {
+        "file": "assets/audio/ombattu.mp3",
+        "tts_text": "ಒಂಬತ್ತು"
+      },
+      "tiles": [
+        {"tile_id": "t1", "english_label": "Nine", "image": "assets/images/numbers/nine.png", "is_correct": true},
+        {"tile_id": "t2", "english_label": "Seven", "image": "assets/images/numbers/seven.png", "is_correct": false},
+        {"tile_id": "t3", "english_label": "Four", "image": "assets/images/numbers/four.png", "is_correct": false},
+        {"tile_id": "t4", "english_label": "Ten", "image": "assets/images/numbers/ten.png", "is_correct": false}
+      ]
+    },
+    {
+      "exercise_id": "ex_010",
+      "exercise_type": "select_correct_image",
+      "word": {
+        "kannada_script": "ಹತ್ತು",
+        "kannada_roman": "hattu",
+        "english": "Ten"
+      },
+      "audio": {
+        "file": "assets/audio/hattu.mp3",
+        "tts_text": "ಹತ್ತು"
+      },
+      "tiles": [
+        {"tile_id": "t1", "english_label": "Two", "image": "assets/images/numbers/two.png", "is_correct": false},
+        {"tile_id": "t2", "english_label": "Eight", "image": "assets/images/numbers/eight.png", "is_correct": false},
+        {"tile_id": "t3", "english_label": "Six", "image": "assets/images/numbers/six.png", "is_correct": false},
+        {"tile_id": "t4", "english_label": "Ten", "image": "assets/images/numbers/ten.png", "is_correct": true}
+      ]
+    }
+  ]
+}

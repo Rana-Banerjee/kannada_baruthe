@@ -34,10 +34,20 @@
 
 ## In Progress 🔧
 
-- **Playwright Testing** - Working E2E tests:
-  - Test files created: `conftest.py`, `helpers/lesson_helper.py`, `test_home.py`, `test_lesson_flow.py`, `test_exercise.py`, `test_audio.py`, `test_completion.py`, `test_checkpoint.py`
-  - Uses Flutter's accessibility mode to expose DOM elements for Playwright
-  - Tests verified working: home screen, progress counter, audio button
+- **Lesson Selection Screen** - Adding ability to select between multiple lessons
+  - Created `LessonIndexService` to load available lessons
+  - Created `LessonSelectScreen` to display lesson cards
+  - Modified `app.dart` to add `/select` route
+  - Modified `home_screen.dart` to navigate to selection screen
+  - Modified `lesson_screen.dart` to handle lessonId argument
+
+---
+
+## Next Up ⏭️
+
+1. Fix app bug: Resume not showing when navigating back to home
+2. Clear checkpoint between test runs for proper test isolation
+3. Run full test suite and fix any remaining issues
 
 ---
 
@@ -66,17 +76,27 @@
 
 * Date: Mar 4, 2026
 * What was done: 
-  - Set up Playwright E2E tests for Flutter Web
-  - Discovered Flutter accessibility mode pattern: click `flt-semantics-placeholder` to enable DOM inspection
-  - Created all test files with proper selectors using semantic elements
-  - Verified tests work: app_name, start_button, no_resume, progress_counter, audio_button
-* Tests passing: ~60% (6 passing, 4 failing due to app bug + state)
-* Files created: 
-  - `tests/conftest.py` - browser fixtures + accessibility helpers
-  - `tests/helpers/lesson_helper.py` - lesson data helpers
-  - `tests/test_home.py`, `test_lesson_flow.py`, `test_exercise.py`, `test_audio.py`, `test_completion.py`, `test_checkpoint.py`
-  - `.opencode/agents/TESTER.md` - Updated with Flutter accessibility testing pattern
-* Left off at: Need to fix app bug where Resume doesn't show after navigation
+  - Added Numbers lesson (lesson_02) with 10 exercises
+  - Created lesson JSON, updated index, added manifest files
+  - Added asset declarations to pubspec.yaml
+  - Created placeholder audio files for numbers
+  - Added lesson selection screen (lesson_select_screen.dart)
+  - Created LessonIndexService to load available lessons
+  - Modified app routes and navigation flow
+* Files created:
+  - `data/lessons/lesson_02.json` - new lesson
+  - `data/lessons_index.json` - added lesson_02 entry
+  - `assets/images/numbers/IMAGE_MANIFEST.md` - image list
+  - `assets/audio/AUDIO_MANIFEST.md` - added numbers section
+  - `pubspec.yaml` - added new assets
+  - 10 placeholder audio files in `assets/audio/`
+  - `lib/models/lesson_index.dart` - new model
+  - `lib/services/lesson_index_service.dart` - new service
+  - `lib/screens/lesson_select_screen.dart` - new screen
+* Modified:
+  - `lib/app.dart` - added /select route
+  - `lib/screens/home_screen.dart` - navigate to select
+  - `lib/screens/lesson_screen.dart` - handle lessonId argument
 
 ---
 
