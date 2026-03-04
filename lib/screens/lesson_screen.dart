@@ -25,24 +25,34 @@ class _LessonScreenState extends State<LessonScreen> {
   bool _showFeedback = false;
   bool _isLoading = true;
   String? _errorMessage;
+  bool _isLessonLoaded = false;
 
   @override
   void initState() {
     super.initState();
-    _loadLesson();
+  }
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    if (!_isLessonLoaded) {
+      _isLessonLoaded = true;
+      _loadLesson();
+    }
   }
 
   Future<void> _loadLesson() async {
     try {
-      final checkpoint = ModalRoute.of(context)?.settings.arguments as Checkpoint?;
-      
+      final checkpoint =
+          ModalRoute.of(context)?.settings.arguments as Checkpoint?;
+
       // Load the lesson
       final lesson = await LessonService.loadFirstLesson();
-      
+
       // Resume from checkpoint if provided
       final startIndex = checkpoint?.exerciseIndex ?? 0;
       final startScore = checkpoint?.score ?? 0;
-      
+
       setState(() {
         _lesson = lesson;
         _currentExerciseIndex = startIndex;
@@ -78,7 +88,7 @@ class _LessonScreenState extends State<LessonScreen> {
     setState(() {
       _selectedTileIndex = tileIndex;
       _showFeedback = true;
-      
+
       if (isCorrect) {
         _score++;
       }
@@ -90,14 +100,14 @@ class _LessonScreenState extends State<LessonScreen> {
 
   Future<void> _saveCheckpoint() async {
     if (_lesson == null) return;
-    
+
     final checkpoint = Checkpoint(
       lessonId: _lesson!.lessonId,
       exerciseIndex: _currentExerciseIndex,
       score: _score,
       timestamp: DateTime.now(),
     );
-    
+
     await ProgressService().saveCheckpoint(checkpoint);
   }
 
@@ -111,7 +121,7 @@ class _LessonScreenState extends State<LessonScreen> {
         _selectedTileIndex = null;
         _showFeedback = false;
       });
-      
+
       // Auto-play audio for next exercise
       final config = AppConfig.instance;
       if (config.autoPlayAudio) {
@@ -126,7 +136,7 @@ class _LessonScreenState extends State<LessonScreen> {
   Future<void> _completeLesson() async {
     // Clear checkpoint
     await ProgressService().clearCheckpoint();
-    
+
     // Navigate to completion screen with score
     if (mounted) {
       Navigator.pushReplacementNamed(
@@ -152,26 +162,27 @@ class _LessonScreenState extends State<LessonScreen> {
   @override
   Widget build(BuildContext context) {
     final config = AppConfig.instance;
-    
+
     return Scaffold(
       backgroundColor: _parseColor(config.backgroundColor),
       appBar: AppBar(
         backgroundColor: _parseColor(config.backgroundColor),
         elevation: 0,
         leading: IconButton(
-          icon: Icon(Icons.arrow_back, color: _parseColor(config.textColorPrimary)),
+          icon: Icon(Icons.arrow_back,
+              color: _parseColor(config.textColorPrimary)),
           onPressed: () => Navigator.pop(context),
         ),
         title: _lesson != null
-          ? Text(
-              key: const Key('kl_lesson_progress'),
-              '${_currentExerciseIndex + 1} / ${_lesson!.exercises.length}',
-              style: TextStyle(
-                color: _parseColor(config.textColorPrimary),
-                fontWeight: FontWeight.bold,
-              ),
-            )
-          : const Text('Lesson'),
+            ? Text(
+                key: const Key('kl_lesson_progress'),
+                '${_currentExerciseIndex + 1} / ${_lesson!.exercises.length}',
+                style: TextStyle(
+                  color: _parseColor(config.textColorPrimary),
+                  fontWeight: FontWeight.bold,
+                ),
+              )
+            : const Text('Lesson'),
         centerTitle: true,
       ),
       body: _buildBody(),
@@ -224,7 +235,7 @@ class _LessonScreenState extends State<LessonScreen> {
               ),
             ),
             const SizedBox(height: 32),
-            
+
             // Word header with audio
             WordHeader(
               word: exercise.word,
@@ -232,7 +243,7 @@ class _LessonScreenState extends State<LessonScreen> {
               ttsText: exercise.audio.ttsText,
             ),
             const SizedBox(height: 32),
-            
+
             // Tile grid
             Expanded(
               child: TileGrid(
@@ -243,7 +254,7 @@ class _LessonScreenState extends State<LessonScreen> {
                 onTileTap: _onTileTap,
               ),
             ),
-            
+
             // Feedback banner (shown after selection)
             if (_showFeedback)
               FeedbackBanner(
