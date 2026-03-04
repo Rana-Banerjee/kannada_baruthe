@@ -1,5 +1,5 @@
 {
-  "app": { "name": "KannadaLearn", "version": "1.0.0" },
+  "app": { "name": "Kannada Baruthe", "version": "1.0.0" },
   "theme": { "primary_color": "#58CC02", "secondary_color": "#1CB0F6", "correct_color": "#58CC02", "wrong_color": "#FF4B4B", "background_color": "#FFFFFF", "text_color_primary": "#3C3C3C" },
   "fonts": { "size_word_script": 32, "size_word_roman": 18, "size_tile_label": 14, "kannada_font": "NotoSansKannada" },
   "exercise": { "num_tiles": 4, "tile_columns": 2, "randomize_tile_order": true, "auto_play_audio": true, "show_roman": true },

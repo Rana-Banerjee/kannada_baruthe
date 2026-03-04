@@ -30,3 +30,4 @@ data/progress/checkpoint.json
 # Misc
 .DS_Store
 *.log
+*.pyc

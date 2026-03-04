@@ -5,5 +5,5 @@ import 'app.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await AppConfig.load();
-  runApp(const KannadaLearnApp());
+  runApp(const KannadaBarutheApp());
 }

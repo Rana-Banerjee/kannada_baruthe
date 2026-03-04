@@ -15,13 +15,22 @@ Modern Flutter (3.24.5+) uses **Canvaskit/Skwasm** by default which renders to `
 
 ## Prerequisite: Build and Start Server
 
+**Option 1: Development Mode (Recommended for Testing)**
+```bash
+# Run Flutter web dev server on fixed port
+flutter run -d chrome --web-port 8081
+```
+
+**Option 2: Production Build**
 ```bash
 # Build Flutter web (no special renderer flag needed in modern Flutter)
 flutter build web
 
-# Start HTTP server
-cd build/web && python3 -m http.server 8080 &
+# Start HTTP server on port 8081
+cd build/web && python3 -m http.server 8081 &
 ```
+
+⚠️ **Port 8081 must be free.** If busy, kill the process: `lsof -ti:8081 | xargs kill -9`
 
 ---
 
@@ -212,7 +221,7 @@ from conftest import go_home, _click_button_by_text, _get_semantic_text
 def test_app_name_visible(page):                         # AC1.1
     go_home(page)
     texts = _get_semantic_text(page)
-    assert any('KannadaLearn' in text for text in texts)
+    assert any('Kannada Baruthe' in text for text in texts)
 
 def test_start_button_present(page):                     # AC1.1
     go_home(page)

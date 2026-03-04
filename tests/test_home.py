@@ -4,7 +4,7 @@ def test_app_name_visible(page):                         # AC1.1
     go_home(page)
     texts = _get_semantic_text(page)
     # Check that app name is present in semantics
-    assert any('KannadaLearn' in text for text in texts), f"App name not found in: {texts}"
+    assert any('Kannada Baruthe' in text for text in texts), f"App name not found in: {texts}"
 
 def test_start_button_present(page):                     # AC1.1
     go_home(page)

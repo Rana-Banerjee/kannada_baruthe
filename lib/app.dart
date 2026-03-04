@@ -5,8 +5,8 @@ import 'screens/lesson_select_screen.dart';
 import 'screens/lesson_screen.dart';
 import 'screens/complete_screen.dart';
 
-class KannadaLearnApp extends StatelessWidget {
-  const KannadaLearnApp({super.key});
+class KannadaBarutheApp extends StatelessWidget {
+  const KannadaBarutheApp({super.key});
 
   @override
   Widget build(BuildContext context) {

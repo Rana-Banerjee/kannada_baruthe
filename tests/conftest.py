@@ -1,7 +1,7 @@
 import pytest, json
 from playwright.sync_api import sync_playwright
 
-BASE_URL = "http://localhost:8080"
+BASE_URL = "http://localhost:8081"
 LESSON_FILE = "data/lessons/lesson_01.json"
 
 @pytest.fixture(scope="session")
@@ -11,7 +11,7 @@ def lesson_data():
 @pytest.fixture(scope="session")
 def browser_context():
     with sync_playwright() as p:
-        browser = p.chromium.launch(headless=True)
+        browser = p.chromium.launch(headless=False)
         ctx = browser.new_context(viewport={'width': 1920, 'height': 1080})
         yield ctx
         browser.close()
@@ -19,6 +19,9 @@ def browser_context():
 @pytest.fixture
 def page(browser_context):
     page = browser_context.new_page()
+    # Clear localStorage and sessionStorage before each test for proper isolation
+    page.goto(BASE_URL)
+    page.evaluate('() => { localStorage.clear(); sessionStorage.clear(); }')
     yield page
     page.close()
 
